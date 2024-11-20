@@ -1,0 +1,79 @@
+/* Today's Weather Box */
+.today-weather {
+    background-color: rgba(66, 19, 238, 0.7); /* Semi-transparent purple background */
+    border-radius: 8px; /* Smaller border radius */
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #fff; /* Ensure text is readable on the dark background */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Weather Card */
+.weather-card {
+    border-radius: 12px; /* Smaller border radius */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    padding: 15px; /* Reduced padding */
+    color: #333; /* Dark text for better readability */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* 4-Day Forecast Box */
+.forecast-box {
+    background-color: rgba(255, 255, 255, 0.3); /* Light semi-transparent background */
+    border-radius: 8px; /* Smaller border radius */
+    padding: 15px; /* Reduced padding */
+    border: 1px solid #ccc; /* Light border for definition */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 10;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Weather Icons */
+.weather-icon-large, .weather-icon {
+    width: 80px; /* Smaller size for icons */
+    height: 80px; /* Smaller size for icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .weather-icon-large, .weather-icon {
+        width: 60px; /* Even smaller size for icons on mobile */
+        height: 60px; /* Even smaller size for icons on mobile */
+    }
+}
+
+/* Container for hover effect */
+.forecast-container {
+    position: relative; /* Positioning context for the text */
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Center text */
+.text-center {
+    text-align: center;
+}
+
+/* Hide the text initially */
+.forecast-container h3 {
+    position: absolute; /* Position absolutely within the container */
+    bottom: 0; /* Align text to the bottom */
+    left: 0; /* Align text to the left */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    color: #fff; /* White text color */
+    padding: 5px; /* Reduced padding */
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+/* Show text on hover */
+.forecast-container:hover h3 {
+    opacity: 1; /* Make text visible on hover */
+}

@@ -1,0 +1,18 @@
+body {
+  background-image: url('/src/sun.jpg');
+  background-size: cover; /* Ensures the background covers the entire screen */
+  background-position: center;
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a clean font */
+}
+
+/* Container for better layout and readability */
+.container {
+  background-color: rgba(255, 255, 255, 0.5); /* Light semi-transparent background for containers */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for a floating effect */
+  max-width: 1200px;
+  margin: auto; /* Center the container */
+  position: relative;
+}
